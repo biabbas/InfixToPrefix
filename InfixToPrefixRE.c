@@ -104,7 +104,7 @@ void prefix(char pr[],char in[]){
                     
     }
     free(OpStk[to]);
-    printf("\n\t");
+    printf("\n");
     temp = Stk[tn];
     while(temp!= NULL){
         printf("%c", temp->a);
