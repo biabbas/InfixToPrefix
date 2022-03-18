@@ -19,7 +19,7 @@ typedef struct node{
 Node attach(Node f, Node l);
 int ip(char x);
 Node getNode(char x);
-void prefix(char pr[],char in[]);
+void prefix(char in[]);
 int main(int argc, const char * argv[]) {
     char in[20];
 
@@ -28,9 +28,9 @@ int main(int argc, const char * argv[]) {
     scanf("%s",in);
     in[strlen(in)]='\0';
 
-    prefix(pr,in);
+    prefix(in);
 
- //   printf("Expression: %s \n",pr);
+ 
     return 0;
 }
 Node attach(Node f, Node l){
@@ -59,7 +59,7 @@ Node getNode(char x){
     temp->ptr = NULL;
     return temp;
 }
-void prefix(char pr[],char in[]){
+void prefix(char in[]){
         int to = 0, tn = -1,i =0;
     Node OpStk[10], Stk[10],temp;
     OpStk[to] = getNode('#');
