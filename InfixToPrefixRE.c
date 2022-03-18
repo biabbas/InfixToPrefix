@@ -21,7 +21,7 @@ int ip(char x);
 Node getNode(char x);
 void prefix(char pr[],char in[]);
 int main(int argc, const char * argv[]) {
-    char in[20],pr[20];
+    char in[20];
 
     
     printf("Enter the valid expression:\n");
