@@ -1,0 +1,18 @@
+1. Take the user input as a string and store in character array in[]. ( in main function)
+2. Set the end of in to '\0'.
+3. Start a while loop with initial integer i=0 till in[i]!= '\0'.
+4. First for a character in[i] allocate a linked list structure to pointer temp and store the character in it.( struct node{ char a; struct node*ptr;})
+5. If the character temp->a is a alphabet or number push it into a Stack Stk containing Operands. Else it may be put into the Operator Stack OpStk 
+containing Structure containing operator symbols.
+6. Else If the Operator character has higher precedence than Operator on the OpStk push into OpStk, else Pop From Stk and Store into the pointer in
+structure on top of stack. Then pop Stk again and this time store into the pointer on top of OpStk. Pop OpStk and store the item into Stk.
+7. If the character is '(' simply push into Stk.
+8. If the character is ')' pop From Stk and Store into the pointer in structure on top of stack. Then pop Stk again and this time store into the pointer 
+on top of OpStk. Pop OpStk and store the item into Stk. Repeat the process until the OpStk top is not '('. Then pop the top of stack OpStk.
+9. At the end if top of OpStk->a is not '#' then
+   pop From Stk and Store into the pointer in structure on top of stack. Then pop Stk again and 
+   this time store into the pointer on top of OpStk. 
+   Pop OpStk and store the item into Stk.
+   Repeat the process until the OpStk top is not '#'. Then free the top of stack OpStk.
+10. Print the contents of linked list structure at the top of Stk until it does not become null. 
+11. The printed content is Prefix Expression of entered input.
