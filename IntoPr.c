@@ -1,4 +1,13 @@
-// Infix toPrefix
+
+/******************************************************************************************
+*   Visit https://github.com/the10minoverview/InfixToPrefix for all files.             *
+*                                                                                          *
+*                                                                                          *
+*                                                                                          *
+*                                                                                          *
+*                                                                                          *                                                                                         
+*   Created by B I                                                                                       *
+******************************************************************************************/      
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
